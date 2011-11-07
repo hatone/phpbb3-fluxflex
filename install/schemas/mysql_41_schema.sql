@@ -434,7 +434,7 @@ CREATE TABLE phpbb_poll_votes (
 	topic_id mediumint(8) UNSIGNED DEFAULT '0' NOT NULL,
 	poll_option_id tinyint(4) DEFAULT '0' NOT NULL,
 	vote_user_id mediumint(8) UNSIGNED DEFAULT '0' NOT NULL,
-	vote_user_ip varchar(50) DEFAULT '' NOT NULL,
+	vote_user_ip varchar(40) DEFAULT '' NOT NULL,
 	KEY topic_id (topic_id),
 	KEY vote_user_id (vote_user_id),
 	KEY vote_user_ip (vote_user_ip)
