@@ -921,7 +921,7 @@ CREATE TABLE phpbb_users (
 	group_id mediumint(8) UNSIGNED DEFAULT '3' NOT NULL,
 	user_permissions mediumtext NOT NULL,
 	user_perm_from mediumint(8) UNSIGNED DEFAULT '0' NOT NULL,
-	user_ip varchar(40) DEFAULT '' NOT NULL,
+	user_ip varchar(50) DEFAULT '' NOT NULL,
 	user_regdate int(11) UNSIGNED DEFAULT '0' NOT NULL,
 	username varchar(255) DEFAULT '' NOT NULL,
 	username_clean varchar(255) DEFAULT '' NOT NULL,
