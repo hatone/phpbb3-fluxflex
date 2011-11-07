@@ -1508,7 +1508,7 @@ class install_install extends module
 
 		// Add categories
 		foreach ($module_classes as $module_class)
-		{
+		
 			$categories = array();
 
 			// Set the module class
