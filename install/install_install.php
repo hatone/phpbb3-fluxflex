@@ -532,6 +532,7 @@ class install_install extends module
 		$this->page_title = $lang['STAGE_DATABASE'];
 
 		// Obtain any submitted data
+
 		$data = $this->get_submitted_data();
 
 		$connect_test = false;
@@ -596,7 +597,10 @@ class install_install extends module
 			$available_dbms = &$available_dbms_temp;
 
 			// And now for the main part of this page
-			$data['table_prefix'] = (!empty($data['table_prefix']) ? $data['table_prefix'] : 'phpbb_');
+
+            // I am here 
+$data['dbname'] = (!empty($data['dbname']) ? $data['dbname'] : 'hatone');
+            $data['table_prefix'] = (!empty($data['table_prefix']) ? $data['table_prefix'] : 'phpbb_');
 
 			foreach ($this->db_config_options as $config_key => $vars)
 			{

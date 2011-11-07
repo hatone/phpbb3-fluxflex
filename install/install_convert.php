@@ -40,7 +40,7 @@ class convert
 
 	var $convertor_tag = '';
 	var $src_dbms = '';
-	var $src_dbhost = 'hatone';
+	var $src_dbhost = '';
 	var $src_dbport = '';
 	var $src_dbuser = '';
 	var $src_dbpasswd = '';
