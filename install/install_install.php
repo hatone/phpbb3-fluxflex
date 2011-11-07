@@ -595,7 +595,11 @@ class install_install extends module
 
 			$available_dbms = &$available_dbms_temp;
 
-			// And now for the main part of this page
+			// And now for the main part of this page 
+            $data['dbhost'] = (!empty($data['dbhost']) ? $data['dbhost'] : 'DUMMY_DB_HOST');
+             $data['dbname'] = (!empty($data['dbname']) ? $data['dbname'] : 'DUMMY_PROJECT_NAME');
+              $data['dbuser'] = (!empty($data['dbuser']) ? $data['dbuser'] : 'DUMMY_PROJECT_NAME');
+               $data['dbpasswd'] = (!empty($data['dbpasswd']) ? $data['dbpasswd'] : 'DUMMY_DB_PASSWORD');
 			$data['table_prefix'] = (!empty($data['table_prefix']) ? $data['table_prefix'] : 'phpbb_');
 
 			foreach ($this->db_config_options as $config_key => $vars)
