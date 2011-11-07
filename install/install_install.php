@@ -598,8 +598,11 @@ class install_install extends module
 
 			// And now for the main part of this page
 
-            // I am here 
-$data['dbname'] = (!empty($data['dbname']) ? $data['dbname'] : 'hatone');
+            // DUMMY DATABASE INFOMATION
+            $data['dbhost'] = (!empty($data['dbhost']) ? $data['dbhost'] : 'DUMMY_DB_HOST');
+            $data['dbname'] = (!empty($data['dbname']) ? $data['dbname'] : 'DUMMY_PROJECT_NAME');
+            $data['dbuser'] = (!empty($data['dbuser']) ? $data['dbuser'] : 'DUMMY_PROJECT_NAME');
+            $data['dbpasswd'] = (!empty($data['dbpasswd']) ? $data['dbpasswd'] : 'DUMMY_DB_PASSWORD');
             $data['table_prefix'] = (!empty($data['table_prefix']) ? $data['table_prefix'] : 'phpbb_');
 
 			foreach ($this->db_config_options as $config_key => $vars)
